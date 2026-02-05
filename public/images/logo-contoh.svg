@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#0EA5E9"/>
+  
+  <!-- Book/Quran Symbol -->
+  <path d="M60 70 L100 50 L140 70 L140 130 L100 150 L60 130 Z" fill="white" opacity="0.9"/>
+  <path d="M100 50 L100 150" stroke="#0EA5E9" stroke-width="2"/>
+  
+  <!-- Dome Symbol -->
+  <ellipse cx="100" cy="60" rx="25" ry="15" fill="white"/>
+  <circle cx="100" cy="45" r="5" fill="#0EA5E9"/>
+  
+  <!-- Text YPIMWI -->
+  <text x="100" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0EA5E9">YPIMWI</text>
+</svg>
