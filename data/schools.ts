@@ -16,7 +16,7 @@ export const schools: School[] = [
     shortName: 'TK RQ WI 01',
     level: 'TK',
     description: "Pendidikan anak usia dini berbasis Al-Qur'an dengan metode pembelajaran yang menyenangkan dan islami.",
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80',
+    image: '/images/schools/rq-1.jpeg',
     gender: 'Campuran',
   },
   {
@@ -43,7 +43,7 @@ export const schools: School[] = [
     shortName: 'HS Al Fatih SD',
     level: 'SD',
     description: "Homeschooling tingkat Sekolah Dasar dengan kurikulum fleksibel berbasis Al-Qur'an dan tahfidz.",
-    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80',
+    image: '/images/schools/hs-sd.jpeg',
     gender: 'Campuran',
   },
   {
@@ -52,7 +52,7 @@ export const schools: School[] = [
     shortName: 'HS Al Fatih SMP Putri',
     level: 'SMP',
     description: "Homeschooling SMP khusus putri dengan fokus pada tahfidz Al-Qur'an dan pembentukan akhlak mulia.",
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80',
+    image: '/images/schools/hs-smp-pi.jpeg',
     gender: 'Putri',
   },
   {

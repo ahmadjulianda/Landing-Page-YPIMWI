@@ -84,7 +84,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80"
+                  src="/images/about.jpeg"
                   alt="Tentang YPIMWI"
                   fill
                   className="object-cover"
