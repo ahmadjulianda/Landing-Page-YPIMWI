@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Calendar, Clock, User, ArrowRight } from 'lucide-react';
 import { articles, getArticleCategoryColor } from '@/data/articles';
 
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function ArtikelPage() {
-    const featuredArticle = articles[0];
-    const otherArticles = articles.slice(1);
+    const featuredArticle = articles.find(article => article.id === 'sistem-pendidikan-islam-terpadu') || articles[0];
+    const otherArticles = articles.filter(article => article.id !== featuredArticle.id);
 
     return (
         <>
@@ -95,10 +96,10 @@ export default function ArtikelPage() {
                                         <span>{featuredArticle.readTime}</span>
                                     </div>
                                 </div>
-                                <button className="self-start btn btn-primary">
+                                <Link href={`/artikel/${featuredArticle.id}`} className="self-start btn btn-primary">
                                     Baca Selengkapnya
                                     <ArrowRight className="ml-2" size={18} />
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </article>
@@ -117,46 +118,48 @@ export default function ArtikelPage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {otherArticles.map((article) => (
                             <article key={article.id} className="card group cursor-pointer">
-                                <div className="relative h-48 overflow-hidden">
-                                    <Image
-                                        src={article.image}
-                                        alt={article.title}
-                                        fill
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                    />
-                                </div>
-                                <div className="p-6">
-                                    <div className="flex items-center gap-3 mb-3">
-                                        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getArticleCategoryColor(article.category)}`}>
-                                            {article.category}
-                                        </span>
-                                        <span className="flex items-center gap-1 text-xs text-gray-400">
-                                            <Clock size={12} />
-                                            {article.readTime}
-                                        </span>
+                                <Link href={`/artikel/${article.id}`}>
+                                    <div className="relative h-48 overflow-hidden">
+                                        <Image
+                                            src={article.image}
+                                            alt={article.title}
+                                            fill
+                                            className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
                                     </div>
-                                    <h3 className="font-bold text-lg text-gray-900 mb-3 line-clamp-2 group-hover:text-sky-600 transition-colors">
-                                        {article.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                                        {article.excerpt}
-                                    </p>
-                                    <div className="flex items-center gap-4 text-sm text-gray-400">
-                                        <div className="flex items-center gap-2">
-                                            <User size={14} />
-                                            <span>{article.author}</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <Calendar size={14} />
-                                            <span>
-                                                {new Date(article.date).toLocaleDateString('id-ID', {
-                                                    day: 'numeric',
-                                                    month: 'short',
-                                                })}
+                                    <div className="p-6">
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getArticleCategoryColor(article.category)}`}>
+                                                {article.category}
+                                            </span>
+                                            <span className="flex items-center gap-1 text-xs text-gray-400">
+                                                <Clock size={12} />
+                                                {article.readTime}
                                             </span>
                                         </div>
+                                        <h3 className="font-bold text-lg text-gray-900 mb-3 line-clamp-2 group-hover:text-sky-600 transition-colors">
+                                            {article.title}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                                            {article.excerpt}
+                                        </p>
+                                        <div className="flex items-center gap-4 text-sm text-gray-400">
+                                            <div className="flex items-center gap-2">
+                                                <User size={14} />
+                                                <span>{article.author}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <Calendar size={14} />
+                                                <span>
+                                                    {new Date(article.date).toLocaleDateString('id-ID', {
+                                                        day: 'numeric',
+                                                        month: 'short',
+                                                    })}
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </article>
                         ))}
                     </div>

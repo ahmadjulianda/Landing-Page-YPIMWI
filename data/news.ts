@@ -50,6 +50,16 @@ export const news: NewsItem[] = [
         date: '2026-01-05',
         author: 'Admin YPIMWI',
     },
+    {
+        id: 'implementasi-kurikulum-terpadu',
+        title: 'YPIMWI Implementasikan Kurikulum Pendidikan Islam Terpadu',
+        excerpt: 'Yayasan resmi meluncurkan kurikulum baru yang mengintegrasikan ilmu pengetahuan umum dengan nilai-nilai Qur\'ani untuk semua unit pendidikan.',
+        content: 'YPIMWI secara resmi mengimplementasikan kurikulum pendidikan Islam terpadu yang menggabungkan kurikulum nasional dengan pendidikan Islam holistik. Program ini dirancang untuk menciptakan lulusan yang tidak hanya unggul secara akademik tetapi juga kuat secara spiritual.',
+        image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80',
+        category: 'Berita',
+        date: '2026-02-10',
+        author: 'Admin YPIMWI',
+    },
 ];
 
 export const getCategoryColor = (category: NewsItem['category']): string => {
