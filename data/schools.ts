@@ -25,7 +25,7 @@ export const schools: School[] = [
     shortName: 'TK RQ WI 02',
     level: 'TK',
     description: "Pendidikan anak usia dini dengan fokus pada pembentukan karakter islami dan pengenalan Al-Qur'an.",
-    image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&q=80',
+    image: '/images/schools/rq-2.jpeg',
     gender: 'Campuran',
   },
   {

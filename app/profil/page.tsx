@@ -42,7 +42,7 @@ export default function ProfilPage() {
                                     Dengan enam unit pendidikan yang mencakup jenjang TK, SD, SMP, hingga SMA/Pesantren, YPIMWI berupaya mencetak generasi yang tidak hanya unggul dalam akademik, tetapi juga memiliki hafalan Al-Qur'an dan akhlak mulia sesuai dengan ajaran Islam.
                                 </p>
                                 <p>
-                                    Nama "Iskandar Muda" diambil sebagai penghormatan terhadap Sultan Iskandar Muda, salah satu sultan terbesar di Nusantara yang dikenal karena kepemimpinan dan kecintaannya terhadap Islam.
+                                    Nama "Iskandar Muda" diambil dari nama Sultan Iskandar Muda, raja dari Kerajaan Aceh yang dikenal karena kepemimpinan dan kecintaannya terhadap Islam.
                                 </p>
                             </div>
                         </div>
@@ -177,12 +177,12 @@ export default function ProfilPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {[
-                                { name: 'H. Ahmad Fadhil, Lc.', position: 'Ketua Yayasan' },
-                                { name: 'Ust. Muhammad Rizky, S.Pd.I', position: 'Sekretaris' },
-                                { name: 'H. Ismail, S.E.', position: 'Bendahara' },
-                                { name: 'Ust. Abdullah, S.Pd.', position: 'Koordinator Pendidikan' },
-                                { name: 'Ustdzh. Khadijah, S.Pd.I', position: 'Koordinator Tahfidz' },
-                                { name: 'Ust. Yusuf, S.Sos.I', position: 'Humas' },
+                                { name: 'Ust. Abdi Human Zultani, S.H.', position: 'Ketua Yayasan' },
+                                { name: 'Ahmad Julianda, S.T.', position: 'Sekretaris' },
+                                { name: 'Zulkarnaini, S.E.', position: 'Bendahara' },
+                                { name: 'R.M. Syawal', position: 'Direktur Keuangan' },
+                                { name: 'Awalin Ridha, S.Pd.', position: 'Direktur Pendidikan dan Pengembangan SDM' },
+                                { name: 'Farid Muharram', position: 'Direktur Umum & Ekonomi' },
                             ].map((person, index) => (
                                 <div key={index} className="bg-white rounded-xl p-6 text-center shadow-sm">
                                     <div className="w-20 h-20 bg-sky-100 rounded-full mx-auto mb-4 flex items-center justify-center">

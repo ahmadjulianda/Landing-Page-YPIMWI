@@ -15,7 +15,7 @@ export const news: NewsItem[] = [
         title: 'Penerimaan Santri Baru Tahun Ajaran 2026/2027',
         excerpt: 'Yayasan Pendidikan Iskandar Muda Wahdah Islamiyah membuka pendaftaran santri baru untuk semua jenjang pendidikan.',
         content: 'Yayasan Pendidikan Iskandar Muda Wahdah Islamiyah membuka pendaftaran santri baru untuk semua jenjang pendidikan tahun ajaran 2026/2027.',
-        image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
+        image: '/images/news/flyer-spmb-hs-smp-pi-2026.jpeg',
         category: 'Pengumuman',
         date: '2026-02-01',
         author: 'Admin YPIMWI',
