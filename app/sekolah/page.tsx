@@ -105,7 +105,7 @@ export default function SekolahPage() {
                         Hubungi kami untuk informasi lebih lanjut tentang pendaftaran santri baru
                     </p>
                     <a
-                        href="https://wa.me/6281234567890"
+                        href="https://wa.me/6281247117035"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn bg-white text-sky-600 hover:bg-sky-50"
