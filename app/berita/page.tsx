@@ -12,7 +12,7 @@ export default function BeritaPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative py-20 md:py-28 gradient-bg">
+            <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 gradient-bg">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 right-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
                 </div>
@@ -27,15 +27,15 @@ export default function BeritaPage() {
             </section>
 
             {/* Category Filter */}
-            <section className="py-8 bg-white sticky top-16 md:top-20 z-30 shadow-sm">
+            <section className="py-8 bg-white sticky top-[72px] md:top-24 z-30 shadow-sm">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap justify-center gap-2">
                         {['Semua', 'Berita', 'Pengumuman', 'Kegiatan', 'Prestasi'].map((cat) => (
                             <button
                                 key={cat}
                                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${cat === 'Semua'
-                                        ? 'bg-sky-600 text-white'
-                                        : 'bg-gray-100 text-gray-600 hover:bg-sky-100 hover:text-sky-600'
+                                    ? 'bg-sky-600 text-white'
+                                    : 'bg-gray-100 text-gray-600 hover:bg-sky-100 hover:text-sky-600'
                                     }`}
                             >
                                 {cat}
