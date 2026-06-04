@@ -11,7 +11,7 @@ export default function ProfilPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative py-20 md:py-28 gradient-bg">
+            <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 gradient-bg">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 right-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
                 </div>
