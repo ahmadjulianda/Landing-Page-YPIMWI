@@ -34,7 +34,7 @@ export const schools: School[] = [
     shortName: 'TK RQ Abdurrahman',
     level: 'TK',
     description: "Pendidikan anak usia dini yang menggabungkan kurikulum nasional dengan nilai-nilai Qur'ani.",
-    image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80',
+    image: '/images/schools/rq-2.jpeg',
     gender: 'Campuran',
   },
   {
